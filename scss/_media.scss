@@ -1,5 +1,6 @@
 @media (max-width: 895px) {
   .header {
+    padding: 45px 0;
     &__inner {
       justify-content: space-between;
     }
@@ -73,6 +74,13 @@
         left: 0;
         transform: rotate(-45deg);
       }
+    }
+  }
+
+  .intro {
+    padding-top: 30px;
+    &__img {
+      opacity: 0.6;
     }
   }
 }
