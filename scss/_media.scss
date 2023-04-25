@@ -51,4 +51,28 @@
       }
     }
   }
+
+  .burger {
+    * {
+      transition: transform 0.3s ease;
+    }
+    &.active {
+      position: relative;
+      *:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+      }
+      *:nth-child(2) {
+        visibility: hidden;
+      }
+      *:nth-child(3) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }
