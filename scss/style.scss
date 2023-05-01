@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-  max-width: 1130px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .btn {
@@ -106,6 +106,7 @@ body {
 
 .intro {
   padding-top: 60px;
+  margin-bottom: 100px;
   &__inner {
     position: relative;
     display: flex;
@@ -170,6 +171,73 @@ body {
     }
   }
 }
+
+.presentation {
+
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 23px;
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    flex: 0 1 354px;
+    height: 256px;
+    background-color: $orange;
+  }
+}
+
+.presentation-block {
+  height: 100%;
+  position: relative;
+  transform: translate(16px, -13px);
+  &__info {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: $secondary;
+    line-height: calc(16 / 14 * 100%);
+    max-width: 200px;
+    background-color: #EAB665;
+    padding: 16px 16px 32px 16px;
+    border-bottom-right-radius: 50%;
+  }
+
+  &__num {
+    color: $defaultWhite;
+  }
+
+  &__title {
+    color: $black;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__text {
+    max-width: 195px;
+    position: absolute;
+    left: 16px;
+    bottom: 32px;
+    font-size: 10px;
+    line-height: calc(10 / 10 * 100%);
+    color: $defaultWhite;
+  }
+}
+
 
 
 @import "media";

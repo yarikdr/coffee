@@ -84,3 +84,14 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .presentation {
+    &__block {
+      background-color: transparent;
+    }
+  }
+  .presentation-block {
+    transform: translate(0, 0);
+  }
+}
