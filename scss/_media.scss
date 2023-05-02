@@ -26,6 +26,7 @@
       // top: 0;
       left: 0;
     }
+    overflow: auto;
     position: absolute;
     // top: -100vh;
     // left: 0;
@@ -38,7 +39,7 @@
     flex-direction: column;
     justify-content: stretch;
     background-color: $orange;
-    padding: 50px 40px 0 30px;
+    padding: 50px 40px 60px 30px;
     gap: 20px;
     &__section {
       flex-direction: column;
