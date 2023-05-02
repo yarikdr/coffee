@@ -1,3 +1,14 @@
+@media (max-width: 1170px) {
+  .roasted {
+    padding: clamp(100px, 30%, 252px) 0;
+    position: relative;
+    &__inner {
+      padding: 0;
+      position: static;
+    }
+  }
+}
+
 @media (max-width: 895px) {
   .header {
     padding: 45px 0;
