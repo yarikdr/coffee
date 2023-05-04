@@ -120,6 +120,31 @@
       opacity: 0.6;
     }
   }
+
+  .best {
+    &__products {
+      grid-template-columns: repeat(2, minmax(auto, 350px));
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .best {
+    &__inner {
+      grid-template-areas: "title" "btn" "products";
+      justify-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__products {
+      grid-template-columns: minmax(auto, 350px);
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 425px) {
