@@ -95,6 +95,25 @@
       opacity: 0.6;
     }
   }
+
+  .popular {
+    &__list {
+      grid-template-columns: minmax(auto, 475px);
+      grid-auto-rows: 1fr;
+      justify-content: center;
+    }
+  }
+
+  .popular-item {
+    &__content {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      align-content: stretch;
+      gap: 10px;
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -105,5 +124,16 @@
   }
   .presentation-block {
     transform: translate(0, 0);
+  }
+
+  .popular-item {
+    &__content {
+      padding: 10px 15px;
+      padding-left: 83px;
+    }
+    &__img {
+      width: 140px;
+      height: 140px;
+    }
   }
 }

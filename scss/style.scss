@@ -287,6 +287,68 @@ body {
   }
 }
 
+.popular {
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    margin-bottom: 47px;
+    text-align: center;
+  }
+
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+    column-gap: 50px;
+  }
+}
+
+.popular-item {
+  display: grid; //to maintain the same height for elems
+  position: relative;
+  &__img {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__content {
+    display: grid;
+    border: 3px solid #414141;
+    padding: 20px 25px;
+    padding-left: 110px;
+    grid-template-rows: repeat(2, auto);
+    margin-left: 60px;
+  }
+
+  &__title {
+    font-family: $secondary;
+    font-size: clamp(25px, 3vw, 30px);
+    line-height: calc(35 / 30 * 100%);
+    color: $defaultBlack;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(26 / 20 * 100%);
+    color: $orange;
+    text-align: right;
+  }
+}
 
 @import "media";
