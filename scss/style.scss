@@ -288,7 +288,7 @@ body {
 }
 
 .popular {
-
+  margin-bottom: 81px;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -348,6 +348,49 @@ body {
     line-height: calc(26 / 20 * 100%);
     color: $orange;
     text-align: right;
+  }
+}
+
+.machine {
+  margin-bottom: 81px;
+  height: 674px;
+  background-color: $defaultWhite;
+  .container {
+    height: 100%;
+  }
+  &__inner {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 0 1 676px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 33px;
+  }
+
+  // &__btn {}
+
+  &__img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    right: 0;
+    z-index: 0;
   }
 }
 

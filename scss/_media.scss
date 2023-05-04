@@ -114,6 +114,12 @@
       gap: 10px;
     }
   }
+
+  .machine {
+    &__img {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -122,6 +128,7 @@
       background-color: transparent;
     }
   }
+
   .presentation-block {
     transform: translate(0, 0);
   }
