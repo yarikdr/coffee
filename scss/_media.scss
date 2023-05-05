@@ -127,6 +127,13 @@
       justify-content: space-around;
     }
   }
+
+  .slider {
+    &__prev, &__next {
+      transform: translate(0, 0);
+      top: 80%;
+    }
+  }
 }
 
 @media (max-width: 550px) {
