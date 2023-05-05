@@ -136,6 +136,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  .reservation {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__img {
+      max-height: 300px;
+      img {
+        position: static;
+      }
+    }
+  }
+
+  .reservation-form {
+    padding: 42px;
+  }
+}
+
 @media (max-width: 550px) {
   .best {
     &__inner {
