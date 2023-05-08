@@ -134,6 +134,13 @@
       top: 80%;
     }
   }
+
+  .blog {
+    &__articles {
+      grid-template-columns: repeat(2, minmax(auto, 350px));
+      justify-content: space-around;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -167,6 +174,13 @@
     }
 
     &__products {
+      grid-template-columns: minmax(auto, 350px);
+      justify-content: center;
+    }
+  }
+
+  .blog {
+    &__articles {
       grid-template-columns: minmax(auto, 350px);
       justify-content: center;
     }
