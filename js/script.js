@@ -1,6 +1,6 @@
-window.addEventListener('DOMContentLoaded', () => {
-  const burger = document.querySelector('.burger'),
-        menu = document.querySelector('.menu')
+function burger(burgerSel, menuSel) {
+  const burger = document.querySelector(burgerSel),
+        menu = document.querySelector(menuSel)
   burger.addEventListener('click', () => {
     if (parseInt(getComputedStyle(document.body).width) <= 895) {
       burger.classList.toggle('active')
@@ -8,4 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.toggle('lock')
     }
   })
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  burger('.burger', '.menu')
 })
