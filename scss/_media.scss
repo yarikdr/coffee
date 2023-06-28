@@ -141,6 +141,14 @@
       justify-content: space-around;
     }
   }
+
+  .footer {
+    &__top-inner {
+      grid-template-areas: 
+        "phone phone form"
+        "address . .";
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -159,6 +167,24 @@
 
   .reservation-form {
     padding: 42px;
+  }
+}
+
+@media (max-width: 605px) {
+  .footer {
+    &__top-inner {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-template-areas: 
+        "phone"
+        "address"
+        "form"
+    }
+
+    &__form {
+      width: 100%;
+      max-width: 350px;
+    }
   }
 }
 
@@ -206,6 +232,24 @@
     &__img {
       width: 140px;
       height: 140px;
+    }
+  }
+
+  .footer {
+    &__bottom-inner {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-template-areas: 
+        "desc"
+        "networks"
+        "copyrights";
+    }
+
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
